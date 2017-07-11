@@ -3,7 +3,7 @@ Auther:FlymeDev_Finder(XDA:sunnyfinder)
 
 # Establishing a Build Environment
 
-Installing the JDK
+Installing the JDK</b>
 
 Run the following:
 
@@ -12,13 +12,13 @@ $ sudo apt-get update
 $ sudo apt-get install openjdk-8-jdk
 
 --------
-Installing required packages
+<b>Installing required packages</b>
 
 $ sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip
 
 --------
 
-Configuring USB Access
+<b>Configuring USB Access</b>
 
 Under GNU/Linux systems (and specifically under Ubuntu systems), regular users can't directly access USB devices by default. The system needs to be configured to allow such access.
 
@@ -30,7 +30,7 @@ $ wget -S -O - http://source.android.com/source/51-android.txt | sed "s/<usernam
 
 --------
 
-Installing Repo
+<b>Installing Repo</b>
 
 Repo is a tool that makes it easier to work with Git in the context of Android. For more information about Repo, see the Developing section.
 
@@ -51,13 +51,13 @@ $ chmod a+x ~/bin/repo
 
 --------
 
-Installing Android Studio
+<b>Installing Android Studio</b>
 
 In order to build patchrom project, you must have Android Studio (Download Link：https://developer.android.com/studio/index.html) installed.( Install Instructions：https://developer.android.com/studio/install.html)
 
 --------
 
-Add the SDK tools and platform-tools to PATH.
+<b>Add the SDK tools and platform-tools to PATH</b>
 
 $ sudo gedit .bashrc
 
@@ -71,7 +71,7 @@ $ source .bashrc
 
 --------
 
-Downloading the Source
+<b>Downloading the Source</b>
 
 Use repo init with "-b" for download the branch you want
 
@@ -95,7 +95,7 @@ $ repo init --repo-url git://github.com/FlymeOS/repo.git -u https://github.com/F
 
 $ repo sync --no-clone-bundle -c -j4
 
-Port to your Device
+# Port to your Device
 
 After downloading the code, run the following to initialize the build environment:
 
@@ -109,13 +109,13 @@ $ cd devices/demo
 
 Make sure your device has root privilege or a rooted kernel (preferred), and connect your phone to your computer, then open the phone’s USB debug mode. Then run the following to build a full Flyme patchrom :
 
-# Generate device’s config file – Makefile
+Generate device’s config file – Makefile
 
 The command will attempt to automatically extract boot.img and recovery.img from the device. If the extraction fails, you need to copy boot.img and recovery.img into the device’s folder, and then re-execute the command.Then you should modify the Makefile to config the correct device’s information
 
 $ flyme config      
 
-# Generate new device’s project folder. This will generate a stockrom.zip, flash this zip in recovery mode to ensure it works normally
+Generate new device’s project folder. This will generate a stockrom.zip, flash this zip in recovery mode to ensure it works normally
 
 $ flyme newproject
 
@@ -137,7 +137,7 @@ Automatic patching may cause code merge conflicts. The conflict will be marked i
   
 >>>>>>> BOSP
 
-# Generate the completed Flyme ROM package
+Generate the completed Flyme ROM package
 
 $ flyme fullota
 
@@ -166,6 +166,6 @@ $ flyme upgrade
 zoujunhua86@gmail.com
 
 
-The official certified Flyme download link of third party devices (In Chinese)
+# The official certified Flyme download link of third party devices (In Chinese)
 
 http://www.flyme.cn/firmware.html
