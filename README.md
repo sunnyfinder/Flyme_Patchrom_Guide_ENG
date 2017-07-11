@@ -53,7 +53,11 @@ Download the Repo tool and ensure that it is executable:
 
 <b>Installing Android Studio</b>
 
-In order to build patchrom project, you must have Android Studio (Download Link：https://developer.android.com/studio/index.html) installed.(Install Instructions：https://developer.android.com/studio/install.html)
+In order to build patchrom project, you must have Android Studio installed.
+
+Download Link：https://developer.android.com/studio/index.html
+
+Install Instructions：https://developer.android.com/studio/install.html
 
 --------
 
@@ -109,13 +113,15 @@ Create new device’s folder (Such as: demo), the later work will be done in thi
 
 Make sure your device has root privilege or a rooted kernel (preferred), and connect your phone to your computer, then open the phone’s USB debug mode. Then run the following to build a full Flyme patchrom :
 
-Generate device’s config file – Makefile
+<b>Generate device’s config file – Makefile</b>
 
 The command will attempt to automatically extract boot.img and recovery.img from the device. If the extraction fails, you need to copy boot.img and recovery.img into the device’s folder, and then re-execute the command.Then you should modify the Makefile to config the correct device’s information
 
     $ flyme config      
 
-Generate new device’s project folder. This will generate a stockrom.zip, flash this zip in recovery mode to ensure it works normally
+<b>Generate new device’s project folder</b>
+
+This will generate a stockrom.zip, flash this zip in recovery mode to ensure it works normally
 
     $ flyme newproject
 
@@ -123,7 +129,7 @@ Automatically add the Flyme code into kernel and framework
 
     $ flyme patchall    
 
-* Resolve conflicts
+<b>Resolve conflicts</b>
 
 Automatic patching may cause code merge conflicts. The conflict will be marked in the following form. You must resolve these conflicts in the device's folder.
 
@@ -137,13 +143,13 @@ Automatic patching may cause code merge conflicts. The conflict will be marked i
   
     >>>>>>> BOSP
 
-Generate the completed Flyme ROM package
+<b>Generate the completed Flyme ROM package</b>
 
     $ flyme fullota
 
 * Flyme Version Upgrade
 
-Run the following to upgrade Flyme version for your device
+<b>Run the following to upgrade Flyme version for your device</b>
 
     $ flyme cleanall
 
