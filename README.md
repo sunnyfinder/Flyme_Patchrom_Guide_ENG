@@ -119,7 +119,7 @@ Generate new device’s project folder. This will generate a stockrom.zip, flash
 
     $ flyme newproject
 
-# Automatically add the Flyme code into kernel and framework
+Automatically add the Flyme code into kernel and framework
 
     $ flyme patchall    
 
