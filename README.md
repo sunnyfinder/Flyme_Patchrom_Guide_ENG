@@ -1,15 +1,21 @@
-#Flyme 6 Patchrom Guide (English)
+# Flyme 6 Patchrom Guide (English)
 Auther:FlymeDev_Finder(XDA:sunnyfinder)
 
-#Establishing a Build Environment
---------
+# Establishing a Build Environment
+
 Installing the JDK
+
 Run the following:
+
 $ sudo apt-get update
+
 $ sudo apt-get install openjdk-8-jdk
+
 --------
 Installing required packages
+
 $ sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip
+
 --------
 Configuring USB Access
 Under GNU/Linux systems (and specifically under Ubuntu systems), regular users can't directly access USB devices by default. The system needs to be configured to allow such access.
