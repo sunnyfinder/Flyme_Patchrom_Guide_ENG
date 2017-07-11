@@ -7,14 +7,14 @@ Installing the JDK</b>
 
 Run the following:
 
-$ sudo apt-get update
+  $ sudo apt-get update
 
-$ sudo apt-get install openjdk-8-jdk
+  $ sudo apt-get install openjdk-8-jdk
 
 --------
 <b>Installing required packages</b>
 
-$ sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip
+  $ sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip
 
 --------
 
@@ -26,7 +26,7 @@ The recommended approach is to create a file at /etc/udev/rules.d/51-android.rul
 
 To do this, run the following command to download the 51-android.txt file attached to this site, modify it to include your username, and place it in the correct location:
 
-$ wget -S -O - http://source.android.com/source/51-android.txt | sed "s/<username>/$USER/" | sudo tee >/dev/null /etc/udev/rules.d/51-android.rules; sudo udevadm control --reload-rules
+  $ wget -S -O - http://source.android.com/source/51-android.txt | sed "s/<username>/$USER/" | sudo tee >/dev/null /etc/udev/rules.d/51-android.rules; sudo udevadm control --reload-rules
 
 --------
 
@@ -38,22 +38,22 @@ To install Repo:
 
 Make sure you have a bin/ directory in your home directory and that it is included in your path:
 
-$ mkdir ~/bin
+  $ mkdir ~/bin
 
-$ PATH=~/bin:$PATH
+  $ PATH=~/bin:$PATH
 
 --------
 Download the Repo tool and ensure that it is executable:
 
-$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+  $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 
-$ chmod a+x ~/bin/repo
+  $ chmod a+x ~/bin/repo
 
 --------
 
 <b>Installing Android Studio</b>
 
-In order to build patchrom project, you must have Android Studio (Download Link：https://developer.android.com/studio/index.html) installed.( Install Instructions：https://developer.android.com/studio/install.html)
+In order to build patchrom project, you must have Android Studio (Download Link：https://developer.android.com/studio/index.html) installed.(Install Instructions：https://developer.android.com/studio/install.html)
 
 --------
 
