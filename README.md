@@ -1,7 +1,7 @@
-#Flyme 6 Patchrom Guide (English)
+# Flyme 6 Patchrom Guide (English)
 Auther:FlymeDev_Finder(XDA:sunnyfinder)
 
-#Establishing a Build Environment
+# Establishing a Build Environment
 --------
 Installing the JDK
 Run the following:
@@ -40,7 +40,7 @@ export PATH=$PATH:/home/$username$/Android/Sdk/tools:/home/username/Anroid/Sdk/p
 Save and exit. Then run the following:
 $ source .bashrc
 
-#Downloading the Source
+# Downloading the Source
 --------
 Use repo init with "-b" for download the branch you want
 Use /$ repo sync/ to upgrade to the latest code from flyme git
@@ -59,7 +59,7 @@ If the connection has failed or the download code is too slow, use the following
 $ repo init --repo-url git://github.com/FlymeOS/repo.git -u https://github.com/FlymeOS/manifest.git -b marshmallow-6.0 --no-repo-verify
 $ repo sync --no-clone-bundle -c -j4
 
-#Port to your Device
+# Port to your Device
 --------
 After downloading the code, run the following to initialize the build environment:
 $ source build/envsetup.sh
@@ -100,14 +100,14 @@ $ flyme cleanall
 $ make clean
 $ flyme upgrade
 --------
-#International Developer Feedback Channel
+# International Developer Feedback Channel
 1. Github: Put new issue at Github (https://github.com/FlymeOS/manifest/issues/new).
 2. Send an email to the Flyme Patchrom Engineer-Mr. Zou Junhua (zoujunhua86@gmail.com) with your log.
 3. Flyme Developer Hub(Telegram Group): https://t.me/joinchat/F29EBUL0GBexLoHo1gMTsg
 
-#Chinese Developer Feedback Channel
+# Chinese Developer Feedback Channel
 446108651@qq.com
 zoujunhua86@gmail.com
 
-#The official certified Flyme download link of third party devices (In Chinese)
+# The official certified Flyme download link of third party devices (In Chinese)
 http://www.flyme.cn/firmware.html
