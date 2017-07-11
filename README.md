@@ -1,44 +1,45 @@
-# Flyme 6 Patchrom Guide (English)
+#Flyme 6 Patchrom Guide (English)
+Auther:FlymeDev_Finder(XDA:sunnyfinder)
 
-Establishing a Build Environment
+#Establishing a Build Environment
+--------
 Installing the JDK
 Run the following:
 $ sudo apt-get update
 $ sudo apt-get install openjdk-8-jdk
-
+--------
 Installing required packages
 $ sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip
-
+--------
 Configuring USB Access
 Under GNU/Linux systems (and specifically under Ubuntu systems), regular users can't directly access USB devices by default. The system needs to be configured to allow such access.
 The recommended approach is to create a file at /etc/udev/rules.d/51-android.rules (as the root user).
 To do this, run the following command to download the 51-android.txt file attached to this site, modify it to include your username, and place it in the correct location:
 $ wget -S -O - http://source.android.com/source/51-android.txt | sed "s/<username>/$USER/" | sudo tee >/dev/null /etc/udev/rules.d/51-android.rules; sudo udevadm control --reload-rules
-
+--------
 Installing Repo
 Repo is a tool that makes it easier to work with Git in the context of Android. For more information about Repo, see the Developing section.
 To install Repo:
 Make sure you have a bin/ directory in your home directory and that it is included in your path:
 $ mkdir ~/bin
 $ PATH=~/bin:$PATH
-
+--------
 Download the Repo tool and ensure that it is executable:
 $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 $ chmod a+x ~/bin/repo
-
+--------
 Installing Android Studio
 In order to build patchrom project, you must have Android Studio (Download Link：https://developer.android.com/studio/index.html) installed.( Install Instructions：https://developer.android.com/studio/install.html)
-
+--------
 Add the SDK tools and platform-tools to PATH.
-
 $ sudo gedit .bashrc
 
 Add the line:
-export PATH=”$PATH:/home/$username$/Android/Sdk/tools:/home/username/Anroid/Sdk/platform-tools”
+export PATH=$PATH:/home/$username$/Android/Sdk/tools:/home/username/Anroid/Sdk/platform-tools
 
 Save and exit. Then run the following:
 $ source .bashrc
-
+--------
 Downloading the Source
 Use repo init with "-b" for download the branch you want
 Use /$ repo sync/ to upgrade to the latest code from flyme git
