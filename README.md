@@ -120,7 +120,7 @@ Make sure your device has root privilege or a rooted kernel (preferred), and con
 
 <b>Generate device’s config file – Makefile</b>
 
-The command will attempt to automatically extract boot.img and recovery.img from the device. If the extraction fails, you need to copy boot.img and recovery.img into the device’s folder, and then re-execute the command.Then you should modify the Makefile to config the correct device’s information
+The command will attempt to automatically extract boot.img and recovery.img from the device. If the extraction fails, you need to copy boot.img and recovery.img into the device’s folder, and then re-execute the command. Then you should modify the Makefile to config the correct device’s information
 
     $ flyme config      
 
