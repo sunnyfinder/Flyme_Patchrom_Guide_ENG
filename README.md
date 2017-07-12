@@ -1,5 +1,8 @@
 # Flyme 6 Patchrom Guide (English)
+
 Auther:FlymeDev_Finder(XDA:sunnyfinder)
+
+System environment:Ubuntu
 
 # Establishing a Build Environment
 
@@ -79,7 +82,11 @@ Save and exit. Then run the following:
 
 Use repo init with "-b" for download the branch you want
 
-Use /$ repo sync/ to upgrade to the latest code from flyme git
+Use 
+
+    $ repo sync
+    
+to upgrade to the latest code from flyme git
 
 To initialize your local repository using the patchrom trees, use a command like this:
 
@@ -147,9 +154,9 @@ Automatic patching may cause code merge conflicts. The conflict will be marked i
 
     $ flyme fullota
 
-* Flyme Version Upgrade
+<b>Flyme Version Upgrade</b>
 
-<b>Run the following to upgrade Flyme version for your device</b>
+Run the following to upgrade Flyme version for your device</b>
 
     $ flyme cleanall
 
