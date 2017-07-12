@@ -1,12 +1,12 @@
 # Flyme 6 Patchrom Guide (English)
 
-Auther:FlymeDev_Finder(XDA:sunnyfinder)
+Auther: FlymeDev_Finder(XDA:sunnyfinder)
 
-System environment:Ubuntu
+System environment: Ubuntu
 
 # Establishing a Build Environment
 
-Installing the JDK</b>
+<b>Installing the JDK</b>
 
 Run the following:
 
@@ -132,7 +132,7 @@ This will generate a stockrom.zip, flash this zip in recovery mode to ensure it 
 
     $ flyme newproject
 
-Automatically add the Flyme code into kernel and framework
+<b>Automatically add the Flyme code into kernel and framework</b>
 
     $ flyme patchall    
 
@@ -156,7 +156,7 @@ Automatic patching may cause code merge conflicts. The conflict will be marked i
 
 <b>Flyme Version Upgrade</b>
 
-Run the following to upgrade Flyme version for your device</b>
+Run the following to upgrade Flyme version for your device
 
     $ flyme cleanall
 
