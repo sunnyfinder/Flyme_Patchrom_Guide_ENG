@@ -2,8 +2,6 @@
 
 Auther: FlymeDev_Finder(XDA:sunnyfinder)
 
-System environment: Ubuntu
-
 # Establishing a Build Environment
 
 <b>Installing the JDK</b>
